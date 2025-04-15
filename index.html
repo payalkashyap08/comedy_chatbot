@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>😂 LOL Bot Central 🤖</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <h1 class="animate-pop-in">😂 LOL Bot Central 🤖</h1>
+        <p class="animate-fade-in">Get Ready to Chuckle! Choose Your Comedian!</p>
+    </header>
+
+    <section id="character-selection" class="animate-slide-up">
+        <h2>Meet the Bots:</h2>
+        <div class="character-cards">
+            <!-- Character cards will be injected here by JS -->
+        </div>
+    </section>
+
+    <main id="chat-container" class="hidden"> <!-- Starts hidden -->
+        <div class="chat-header">
+            <h2>Chatting with <span id="current-bot-name">...</span> <span id="current-bot-emoji"></span></h2>
+            <button id="change-bot-button">Change Bot</button>
+        </div>
+        <div id="chat-box">
+            <!-- Messages appear here -->
+            <div class="message bot-message initial-bot-message hidden"> <!-- Also start initial message hidden until needed -->
+                <span class="emoji">👋</span>
+                <p>Alright, human! Pick a bot above and let's get this comedy show on the road!</p>
+            </div>
+        </div>
+        <div id="input-area">
+             <!-- Ensure this ID is correct and unique -->
+            <input type="text" id="user-input" placeholder="Ask something funny or tell me a topic...">
+            <button id="send-button" aria-label="Send Message">
+                <span>Send</span> <!-- Text for non-emoji browsers -->
+                <span class="send-icon">➤</span> <!-- Simple arrow -->
+            </button>
+        </div>
+        <div id="loading-indicator" class="hidden">
+            <div class="spinner"></div> Thinking up something hilarious...
+        </div>
+    </main>
+
+    <footer class="main-footer animate-fade-in">
+        <p>© 2023 Chuckle Circuits Inc. | Warning: May cause excessive giggling.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
