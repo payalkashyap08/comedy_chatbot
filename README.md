@@ -6,7 +6,7 @@
 
 ---
 
-## 🏹 **🎯 What It Does**
+ **🎯 What It Does**
 
 - 💬 Chat with users in a funny and entertaining way  
 - 😂 Tells jokes, puns, and witty one-liners  
@@ -15,7 +15,7 @@
 
 ---
 
-## 🧰 **🛠️ Tech Stack**
+ **🛠️ Tech Stack**
 
 - **Frontend**: HTML, CSS, JavaScript  
 - **API**: Google Studio API (for natural language responses)  
